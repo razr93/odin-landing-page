@@ -1,7 +1,7 @@
 /* Global styles */
 
 body{
-    height: 100vh;
+    height: auto;
     margin: 0;
     border:3px solid palevioletred;
   
@@ -19,7 +19,11 @@ ul{
 
 .container{
     padding: 0 4rem 0 4rem;    
-    border: 1px solid cornflowerblue;
+    border: 1px solid lightgray;
+}
+
+.content{
+    border: 1px solid paleturquoise;
 }
 
 /* Header section */
@@ -39,7 +43,7 @@ ul{
 .hero.container{
     display: flex;
     flex-direction: column;
-    height: 500px;
+    min-height: 500px;
       
 }
 
@@ -65,17 +69,19 @@ ul{
 /* Information section */
 
 .info.container{    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+   
     
-    padding: 1rem 0 1rem 0;
+   
 }
 
 .info.content{
     display: flex;
+    flex-direction: row;
     justify-content: center;    
     align-items: center;     
+
+    padding: 1rem 0 1rem;
+    min-height: 400px;
 }
 
 .info.h2{
@@ -108,10 +114,8 @@ ul{
 }
 
 .quote.container{
-    height: 280px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
+    
 }
 
 
@@ -120,7 +124,13 @@ ul{
     padding: 1rem 0 1rem 0;
 
     display: flex;
-    justify-content: center;    
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+
+    min-height: 250px;
+    
+    
 }
 
 .quote.text{
