@@ -17,6 +17,11 @@ ul{
     padding: 0;
 }
 
+.btn{
+    height: fit-content;
+    width: fit-content;
+}
+
 .container{
     padding: 0 4rem 0 4rem;    
     border: 1px solid lightgray;
@@ -27,8 +32,6 @@ ul{
 }
 
 /* Header section */
-
-
 
 .header{
     display: flex;
@@ -113,12 +116,6 @@ ul{
     border: 2px solid paleturquoise;
 }
 
-.quote.container{
-    
-    
-}
-
-
 /* Quote section */
 .quote.content{
     padding: 1rem 0 1rem 0;
@@ -129,11 +126,27 @@ ul{
     align-items: center;
 
     min-height: 250px;
-    
-    
 }
 
 .quote.text{
     text-align: right;
 }
 
+/* Action Section */
+
+.action.container{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.action.content{
+    width: 70%;
+    min-height: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    flex-wrap: wrap;
+}
